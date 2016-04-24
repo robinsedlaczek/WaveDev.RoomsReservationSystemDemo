@@ -1,26 +1,18 @@
-﻿using System;
-
-namespace RoomsReservationSystem
+﻿namespace RoomsReservationSystem
 {
     internal class Guest : ISensitiveObject
     {
-        public int Id
+        protected Guest(int id, string firstName, string lastName)
         {
-            get
-            {
-                throw new NotImplementedException();
-            }
-
-            set
-            {
-                throw new NotImplementedException();
-            }
+            Id = id;
+            FirstName = firstName;
+            LastName = lastName;
         }
 
-        public string FirstName { get; set; }
+        public int Id { get; }
 
-        public string LastName { get; set; }
+        public string FirstName { get; }
 
-        public CreditCard CreditCard { get; set; }
+        public string LastName { get; }
     }
 }

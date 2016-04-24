@@ -22,6 +22,5 @@ namespace RoomsReservationSystem
         public DateTime ValidUntil { get; set; }
 
         public int VerificationNumber { get; set; }
-
     }
 }

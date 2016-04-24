@@ -21,6 +21,11 @@ namespace RoomsReservationSystem
                 LastName = "Muster",
                 CreditCard = creditCard
             };
+            
+            if (guest is Guest("1", "Max", *))
+            {
+                var newGuest = guest with { FirstName = "Paul" };
+            }
 
             Console.WriteLine(guest.FirstName);
             Console.WriteLine(guest.CreditCard.Number);

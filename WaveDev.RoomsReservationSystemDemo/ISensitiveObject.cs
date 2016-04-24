@@ -2,7 +2,7 @@
 {
     public interface ISensitiveObject
     {
-        int Id { get; set; }
+        int Id { get; }
 
     }
 }
