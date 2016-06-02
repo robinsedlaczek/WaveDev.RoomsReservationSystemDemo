@@ -23,7 +23,6 @@ namespace RoomsReservationSystem
 
             Console.WriteLine(guest.FirstName);
             Console.WriteLine(guest.CreditCard.Number);
-
         }
 
         private ISensitiveObject CreatePrivateGuest()
